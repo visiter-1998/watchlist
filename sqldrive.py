@@ -8,6 +8,5 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=True
 db=SQLAlchemy()
 
 class User(db.Model):
-    __tablename__='myuser'
     id=db.Column(db.Integer, primary_key=True)
     username=db.Column(db.String(20))
